@@ -1,3 +1,21 @@
+-- Just to count boots runs
+local function pingAnalytics()
+    local success, _ = pcall(function()
+        -- Constructing the GoatCounter URL
+        -- 'p' is the path (shows up in your dashboard)
+        -- 't' is the title
+        -- 'r' is the referrer (optional)
+        local baseUrl = "https://ruptorx.goatcounter.com/count"
+        local params = "?p=/boot&t=RuptorX_Legacy_Boot&r=github"
+        
+        return game:HttpGet(baseUrl .. params)
+    end)
+    return success
+end
+
+-- Call it once during initialization
+pingAnalytics()
+
 -- Start performance timer
 local scriptStartTime = os.clock()
 
