@@ -2814,7 +2814,7 @@ end
 local SystemMaintenance = {}
 
 -- Configuration
-local VERSION = 153
+local VERSION = 154
 local GITHUB_VERSION_URL = "https://raw.githubusercontent.com/ruptorx-sourcer/RuptorX/main/version.txt"
 local GITHUB_SCRIPT_URL = "https://raw.githubusercontent.com/ruptorx-sourcer/RuptorX/main/RuptorX-Xe.lua"
 
