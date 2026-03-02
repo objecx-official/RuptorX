@@ -193,7 +193,7 @@ local function findPlayerByName(targetName)
     
     -- Check if injector is active and name matches injected character
     if Interpreter.InjectedCharacters.Active then
-        if (targetName == "closest" or targetname = "nearest") and Interpreter.InjectedCharacters.closest then
+        if (targetName == "closest" or targetName == "nearest") and Interpreter.InjectedCharacters.closest then
             return Interpreter.InjectedCharacters.closest
         elseif targetName == "farthest" and Interpreter.InjectedCharacters.farthest then
             return Interpreter.InjectedCharacters.farthest
